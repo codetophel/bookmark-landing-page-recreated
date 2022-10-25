@@ -11,6 +11,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -96,6 +105,7 @@
         display: none;
       }
 
+      /* display section */
       .row {
         display: flex;
         flex-wrap: wrap;
@@ -163,9 +173,36 @@
         border: 2px solid hsl(256, 26%, 20%);
       }
 
+      /* features section */
+      .features {
+        padding: 10px 10%;
+        text-align: center;
+      }
+
+      .features h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+        justify-content: center;
+      }
+
+      .features p {
+        color: hsl(229, 8%, 60%);
+        font-size: 16px;
+      }
+
+      .feature-div {
+        margin: 0 auto;
+        padding: 0 28%;
+      }
+
       .tab-titles {
         display: flex;
-        margin: 20px 0 30px;
+        margin: 50px 30px;
+        padding: 0 10%;
+      }
+
+      .tab-titles p {
+        font-size: 25px;
       }
 
       .tablinks {
@@ -176,19 +213,26 @@
         cursor: pointer;
       }
 
+      .feature-hr {
+        margin-top: -31px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+      }
       .tablinks::after {
         position: absolute;
-        left: 0;
-        bottom: -6px;
+        left: -10px;
+        bottom: -20px;
         width: 0;
         content: '';
         height: 3px;
         transition: 0.4s;
-        background: #b54769;
+        background: hsl(0, 94%, 66%);
       }
 
       .tablinks.active-link::after {
-        width: 50%;
+        width: 110%;
       }
 
       .tab-contents ul li {
@@ -208,6 +252,146 @@
         display: block;
       }
 
+      .features-col-1 {
+        flex-basis: 50%;
+      }
+
+      .features-col-1 img {
+        width: 100%;
+      }
+
+      .features-col-2 {
+        flex-basis: 45%;
+      }
+
+      .feature-btn {
+        background-color: hsl(228, 45%, 54%);
+        border: 2px solid transparent;
+        color: hsl(0, 0%, 98%);
+        border-radius: 6px;
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: 10px 15px;
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+
+      .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: left;
+        text-align: left;
+      }
+
+      .features-col-2 h2 {
+        margin-top: 50px;
+      }
+
+      .features-col-2 p {
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+
+      /* download section */
+      .download {
+        padding: 10px 10%;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .download h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+        justify-content: center;
+      }
+
+      .download p {
+        color: hsl(229, 8%, 60%);
+        font-size: 16px;
+      }
+
+      .download-div {
+        margin: 0 auto;
+        padding: 0 28%;
+        margin-bottom: 60px;
+      }
+
+      .browser-list {
+        display: grid;
+        margin-top: 50px;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .browser-list div {
+        background: hsl(0, 0%, 100%);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 300;
+        box-shadow: rgba(99, 99, 99, 0.2) 1px 4px 6px 0px;
+        margin-bottom: 50px;
+      }
+
+      .browser-list div img {
+        margin-bottom: 30px;
+      }
+
+      .dots {
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+      }
+      .browser-list div h2 {
+        margin-bottom: 15px;
+        font-size: 25px;
+      }
+
+      .browser-list div h3 {
+        color: hsl(229, 8%, 60%);
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .browser-list div button {
+        text-decoration: none;
+        background-color: hsl(228, 45%, 54%);
+        border: 2px solid transparent;
+        color: hsl(0, 0%, 98%);
+        border-radius: 6px;
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: 10px 15px;
+        margin: 10px auto;
+        cursor: pointer;
+      }
+
+      .faq-btn {
+        background-color: hsl(228, 45%, 54%);
+        border: 2px solid transparent;
+        color: hsl(0, 0%, 98%);
+        border-radius: 6px;
+        text-transform: capitalize;
+        font-weight: 400;
+        padding: 10px 15px;
+        margin: 1rem auto;
+        cursor: pointer;
+      }
+
+      .f1 {
+        margin-bottom: 100px !important;
+      }
+      .f2 {
+        margin-top: 50px;
+        margin-bottom: 50px !important;
+      }
+
+      .f3 {
+        margin-top: 100px;
+        margin-bottom: 10px !important;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -217,14 +401,32 @@
       }
 
       .faq {
-        background: hsl(0, 0%, 98%);
+        background: #fff;
+        margin-top: 30px;
+        padding: 10px 30%;
+        text-align: center;
+      }
+
+      .faq h2 {
+        margin-bottom: 2rem;
+        font-size: 25px;
+      }
+
+      .faq p {
+        font-size: 14px;
+        color: hsl(229, 8%, 60%);
+        margin-bottom: 1.5rem;
       }
 
       .faq-item {
-        background: hsl(0, 0%, 98%);
+        background: #fff;
         color: hsl(256, 26%, 20%);
-        margin-bottom: 1rem;
-        padding: 1rem;
+        margin-bottom: 0.5rem;
+        padding: 5px 0;
+      }
+
+      .faq hr {
+        margin-bottom: 10px;
       }
 
       .faq-link {
@@ -235,21 +437,29 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 0;
       }
 
-      .faq-link img {
-        color: hsl(270, 9%, 17%);
-        padding: 0.5rem;
+      .faq-link i {
+        color: hsl(228, 45%, 44%);
       }
 
-      .faq-link img i {
+      .faq-link i:hover {
+        color: hsl(0, 94%, 66%);
+      }
+
+      .faq-link:hover {
+        color: hsl(0, 94%, 66%);
+      }
+
+      .faq-link .fa-angle-up {
         display: none;
       }
 
       .answer {
         overflow: hidden;
+        text-align: left;
         max-height: 0;
+        margin-top: 10px;
         position: relative;
         transition: max-height 0.7s;
       }
@@ -257,17 +467,17 @@
       .answer p {
         font-size: 1.4rem;
         color: hsl(256, 26%, 20%);
-        padding: 2rem;
+        padding: 0.5rem;
       }
 
       .faq-item:target .answer {
-        max-height: 20rem;
+        max-height: 5rem;
       }
 
-      .faq-item:target .faq-link img {
+      .faq-item:target .faq-link .fa-angle-down {
         display: none;
       }
-      .faq-item:target .faq-link i {
+      .faq-item:target .faq-link .fa-angle-up {
         display: block;
       }
 
@@ -380,12 +590,15 @@
 
       <!-- features section -->
       <div class="features">
-        <h2 class="subtitle">Features</h2>
-        <p>
-          Our aim is to make it quick and easy for you to access your favourite
-          websites. Your bookmarks sync between your devices so you can access
-          them on the go.
-        </p>
+        <div class="feature-div">
+          <h2 class="subtitle">Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+
         <div class="tab-titles">
           <p
             class="tablinks active-link"
@@ -398,8 +611,9 @@
           </p>
           <p class="tablinks" onclick="opentab('Easy-Sharing')">Easy Sharing</p>
         </div>
+        <hr class="feature-hr" />
         <div class="tab-contents active-tab" id="Simple-Bookmarking">
-          <div class="row">
+          <div class="row1">
             <div class="features-col-1">
               <picture>
                 <img src="./images/illustration-features-tab-1.svg" alt="" />
@@ -419,8 +633,8 @@
             </div>
           </div>
         </div>
-        <div class="tab-contents active-tab" id="Speedy-Searching">
-          <div class="row">
+        <div class="tab-contents" id="Speedy-Searching">
+          <div class="row1">
             <div class="features-col-1">
               <picture>
                 <img src="./images/illustration-features-tab-2.svg" alt="" />
@@ -440,15 +654,15 @@
             </div>
           </div>
         </div>
-        <div class="tab-contents active-tab" id="Easy-Sharing">
-          <div class="row">
+        <div class="tab-contents" id="Easy-Sharing">
+          <div class="row1">
             <div class="features-col-1">
               <picture>
                 <img src="./images/illustration-features-tab-3.svg" alt="" />
               </picture>
             </div>
 
-            <div class="feautures-col-2">
+            <div class="features-col-2">
               <div class="content">
                 <h2>Share your bookmarks</h2>
                 <p>
@@ -465,33 +679,35 @@
 
       <!-- //download the extension -->
       <div class="download">
-        <h2 class="subtitle">Download the extension</h2>
-        <p>
-          We’ve got more browsers in the pipeline. Please do let us know if
-          you’ve got a favourite you’d like us to prioritize.
-        </p>
+        <div class="download-div">
+          <h2 class="subtitle">Download the extension</h2>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
         <div class="container">
-          <div class="services-list">
-            <div>
+          <div class="browser-list">
+            <div class="f1">
               <img src="./images/logo-chrome.svg" alt="chrome_logo" />
               <h2>Add to Chrome</h2>
               <h3>Minimum version 62</h3>
-              <img src="./images/bg-dots.svg" alt="bg_dots" />
-              <a href="#" class="work-btn">Add & Install Extension</a>
+              <img class="dots" src="./images/bg-dots.svg" alt="bg_dots" />
+              <button href="#" class="work-btn">Add & Install Extension</button>
             </div>
-            <div>
+            <div class="f2">
               <img src="./images/logo-firefox.svg" alt="firefox_logo" />
               <h2>Add to Firefox</h2>
               <h3>Minimum version 55</h3>
-              <img src="./images/bg-dots.svg" alt="bg_dots" />
-              <a href="#" class="work-btn">Add & Install Extension</a>
+              <img class="dots" src="./images/bg-dots.svg" alt="bg_dots" />
+              <button href="#" class="work-btn">Add & Install Extension</button>
             </div>
-            <div>
+            <div class="f3">
               <img src="./images/logo-opera.svg" alt="opera_logo" />
               <h2>Add to Opera</h2>
               <h3>Minimum version 46</h3>
-              <img src="./images/bg-dots.svg" alt="bg_dots" />
-              <a href="#" class="work-btn">Add & Install Extension</a>
+              <img class="dots" src="./images/bg-dots.svg" alt="bg_dots" />
+              <button href="#" class="work-btn">Add & Install Extension</button>
             </div>
           </div>
         </div>
@@ -510,8 +726,8 @@
             <div class="faq-item" id="faq1">
               <a class="faq-link" href="#faq1">
                 What is Bookmark?
-                <img src="./images/icon-arrow.svg" alt="" />
-                <img src="./images/icon-arrow.svg" alt="" />
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
               </a>
               <div class="answer">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -523,8 +739,8 @@
             <div class="faq-item" id="faq2">
               <a class="faq-link" href="#faq2">
                 How can I request a new browser?
-                <img src="./images/icon-arrow.svg" alt="" />
-                <img src="./images/icon-arrow.svg" alt="" />
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
               </a>
               <div class="answer">
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
@@ -539,8 +755,8 @@
             <div class="faq-item" id="faq3">
               <a class="faq-link" href="#faq3">
                 Is there a mobile app?
-                <img src="./images/icon-arrow.svg" alt="" />
-                <img src="./images/icon-arrow.svg" alt="" />
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
               </a>
               <div class="answer">
                 Sed consectetur quam id neque fermentum accumsan. Praesent
@@ -553,8 +769,8 @@
             <div class="faq-item" id="faq4">
               <a class="faq-link" href="#faq4">
                 What about other Chromium browsers?
-                <img src="./images/icon-arrow.svg" alt="" />
-                <img src="./images/icon-arrow.svg" alt="" />
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-angle-down"></i>
               </a>
               <div class="answer">
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
@@ -564,7 +780,7 @@
             </div>
             <hr />
           </div>
-          <button class="work-btn">More Info</button>
+          <button class="faq-btn">More Info</button>
         </div>
       </div>
 
